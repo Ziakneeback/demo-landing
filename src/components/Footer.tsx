@@ -10,17 +10,17 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-6">Контакты</h3>
             <div className="space-y-4">
-              <a href="tel:+79999999999" className="flex items-center gap-3 hover:text-accent transition-colors">
+              <a href="tel:+77777777777" className="flex items-center gap-3 hover:text-accent transition-colors">
                 <Phone className="h-5 w-5" />
-                <span>+7 (999) 999-99-99</span>
+                <span>+7 (777) 777-77-77</span>
               </a>
-              <a href="mailto:info@remont.ru" className="flex items-center gap-3 hover:text-accent transition-colors">
+              <a href="mailto:info@remont.kz" className="flex items-center gap-3 hover:text-accent transition-colors">
                 <Mail className="h-5 w-5" />
-                <span>info@remont.ru</span>
+                <span>info@remont.kz</span>
               </a>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
-                <span>г. Москва, ул. Примерная, д. 123</span>
+                <span>қ. Алматы, Әл-Фараби даңғылы, 123</span>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="text-primary-foreground/80">
-            © 2024 Ремонт под ключ. Все права защищены.
+            © 2024 Жөндеу қызметі. Барлық құқықтар қорғалған.
           </p>
         </div>
       </div>

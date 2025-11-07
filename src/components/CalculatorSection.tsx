@@ -27,11 +27,11 @@ const CalculatorSection = () => {
     let basePrice = 0;
     const areaNum = parseInt(area);
 
-    // Base price calculation
-    if (workType === "cosmetic") basePrice = 3000;
-    if (workType === "major") basePrice = 8000;
-    if (workType === "designer") basePrice = 15000;
-    if (workType === "minor") basePrice = 1500;
+    // Base price calculation (in Tenge)
+    if (workType === "cosmetic") basePrice = 15000;
+    if (workType === "major") basePrice = 40000;
+    if (workType === "designer") basePrice = 75000;
+    if (workType === "minor") basePrice = 7500;
 
     const totalCost = basePrice * areaNum;
     setCost(totalCost);
@@ -45,7 +45,7 @@ const CalculatorSection = () => {
     }
     
     const message = encodeURIComponent(
-      `Здравствуйте! Хочу узнать о ремонте:\nТип помещения: ${roomType}\nПлощадь: ${area} м²\nВид работ: ${workType}\nРасчетная стоимость: ${cost.toLocaleString()} ₽`
+      `Здравствуйте! Хочу узнать о ремонте:\nТип помещения: ${roomType}\nПлощадь: ${area} м²\nВид работ: ${workType}\nРасчетная стоимость: ${cost.toLocaleString()} ₸`
     );
     window.open(`https://wa.me/?text=${message}`, "_blank");
   };
@@ -125,7 +125,7 @@ const CalculatorSection = () => {
                 <div>
                   <p className="text-muted-foreground mb-2">Примерная стоимость:</p>
                   <p className="text-4xl font-bold text-primary">
-                    {cost.toLocaleString()} ₽
+                    {cost.toLocaleString()} ₸
                   </p>
                 </div>
                 <Button 
